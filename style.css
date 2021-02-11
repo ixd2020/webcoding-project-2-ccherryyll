@@ -1,11 +1,1318 @@
-body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 2em;
+body { 
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 h1 {
-  font-style: italic;
-  color: #373fff;
+  font-style: bold;
+  color: black;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 43px;
+  text-align: center;
+  padding: 63px;
 }
 
-style="margin:auto;max-width:250px"
+h2 {
+  font-style: normal;
+  color: #0070C9;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding: 47px;
+}
+
+h3 {
+  font-style: normal;
+  color: black;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 50px;
+  text-align: center;
+  margin-top:10px;
+} 
+
+h5 {
+  font-style: normal;
+  color: black;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 44px;
+  text-align: center;
+  margin-top: -465px;
+  margin-bottom: 30px;
+} 
+
+h6 {
+  font-style: bold;
+  color: black;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 80px;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 60px;
+} 
+
+/*navbar*/
+
+.topnav {
+  overflow:hidden;
+  background-color: #150906;
+  position: relative;
+}
+
+.topnav a {
+  float: left;
+  height: 16px;
+  display: block;
+  color: #FFFFFF;
+  opacity:0.65;
+  text-align: center;
+  padding: 14px 38px;
+  margin: 0;
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+  left: 230px;
+}
+
+.topnav a:hover {
+  opacity: 1.0;  
+}
+
+.topnav a.active {
+  background-color: #000000;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+}
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+.searchicon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -1px;
+  opacity: 0.8;
+}
+
+.appleicon {
+  width: 17px;
+  height: 20px;
+  position: relative;
+  top: -4px;
+  opacity: 0.8;
+}
+
+.carticon {
+  width: 18px;
+  height: 21px;
+  position: relative;
+  top: -3px;
+  opacity: 0.8;
+}
+
+/*adbox*/
+
+.adbox {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding-top: 5px;
+  padding-right: auto;
+  padding-bottom: 1px;
+  padding-left: auto;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+  color: #4d4d4d;
+}
+
+.linktext {
+  font-size:auto;
+  font-style: normal;
+  text-decoration: none;
+  color: #0066CC;
+  text-align: center;
+}
+
+.linktext: hover {
+  text-decoration: underline;
+}
+
+/*section*/
+
+.section1 {
+  text-align: center;
+}
+.redcowapple {
+  position: relative;
+  margin-top: 28px;
+  margin-bottom: 8px;
+  right: 0.5%;
+}
+
+.shop {
+  font-size: 20px;
+  margin-top: -25px;
+  color :#0066CC;
+}
+
+.longimage {
+  margin-bottom: 30px;
+}
+
+.iphone12 {
+  position: relative;
+  text-align: center;
+}
+.iphone12_title {
+  position: absolute;
+  top: 8%;
+  left: 42%;
+  font-size: 55px;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.bpf {
+  font-size: 25px;
+  margin-top: 7px;
+}
+.lmb {
+  font-size: 20px;
+  color: #0066CC;
+}
+
+.iphone12pro {
+  position: relative;
+  text-align: center;
+  margin-top: 10px;
+}
+.iphone12protitle {
+  position: absolute;
+  top: 8%;
+  left: 39%;
+  font-size: 55px;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+}
+.ialy {
+  font-size: 25px;
+  margin-top: 7px;
+  color: white;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* search */
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 0.5px solid #dbdbdb;
+  border-right: 0.5 solid #dbdbdb;
+  padding: 20px;
+  height: 15px;
+  border-radius: 5px 5px 5px 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus {
+  color: #dbdbdb;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.search_Term {
+  width: 100%;
+  border: 0.5px solid #dbdbdb;
+  border-right: 0.5 solid #dbdbdb;
+  padding: 20px;
+  height: 15px;
+  border-radius: 5px 5px 5px 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.search_Term:focus{
+  color: #dbdbdb;
+}
+
+.burrito {
+  width: 43%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  bottom: 32%;
+  transform: translate(-50%, -50%);
+}
+
+/*support page*/
+
+.imgnav{
+  margin: 5% 0% 0% 25%;
+}
+
+.pd{
+  text-align: center;
+  padding-left: 53px;
+  padding-right: 53px;
+  margin: 0px;
+}
+
+.tb{
+  margin: 0px 0px 0px 330px;
+}
+
+input[type=text], select {
+  width: 45%;
+  padding: 15px 15px;
+  margin-top: 5px;
+  margin-bottom: 300px;
+  margin-right: auto;
+  margin-left: 410px;
+  display: inline-block;
+  border: none;
+  border-radius: 5px;
+}
+
+.imgnav {
+  margin: 5% 0px 0px 25%;
+}
+
+.pd {
+  text-align: center;
+  padding-left: 53px;
+  padding-right: 53px;
+  margin: 0px;
+}
+
+.tb {
+  margin: 0px 0px 0px 330px;
+}
+
+b {
+  text-decoration: none;
+  color: #3D89D7;
+}
+
+b:hover {
+  color: #3D89D7;
+  text-decoration: underline;
+}
+
+/*mac page*/
+
+.productsbar {
+  height: 52px;
+  background-color:	#141414;
+  font-size: 13px;
+  text-align: center;
+  font-family: font-family: 'Open Sans', sans-serif;
+  margin-top: -15px;
+  height: 120px;
+}
+
+.maci1 {
+  position: absolute;
+  left: 15%;
+  top: 10.5%;
+}
+
+.mach1 {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 13%;
+  top: -10%;
+}
+
+.it1 {
+  color: white;
+  position: relative;
+  top: 43%;
+  right: 20%;
+  font-size: 11px;
+}
+
+.it11 {
+  color: #FF6633;
+  font-size: 10px;
+  position: relative;
+  top: 38%;
+  right: 21%;
+}
+
+.maci2 {
+  position: absolute;
+  left: 15%;
+  top: 11%;
+}
+
+.mach2 {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 21%;
+  bottom: 185%;
+}
+
+.it2 {
+  color: white;
+  position: relative;
+  top: 43%;
+  right: 20%;
+  font-size: 11px;
+}
+
+.it21 {
+  color: #FF6633;
+  font-size: 10px;
+  position: relative;
+  top: 38%;
+  right: 21%;
+}
+
+.maci3 {
+  position: absolute;
+  left: 13%;
+  top: 3%;
+}
+
+.mach3 {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  left: 29%;
+  bottom: 358%;
+}
+.it3 {
+  color: white;
+  position: relative;
+  top: 41%;
+  right: 18.5%;
+  font-size: 11px;
+}
+
+.maci4 {
+  position: absolute;
+  left: 13%;
+  top: 3%;
+}
+
+.mach4 {
+  width: 200px;
+  height: 180px;
+  position: relative;
+  left: 37.5%;
+  bottom: 520%;
+}
+
+.it4 {
+  color: white;
+  position: relative;
+  top: 37%;
+  right: 25%;
+  font-size: 11px;
+}
+
+.maci5 {
+  position: absolute;
+  left: 13%;
+  top: 3%;
+}
+
+.mach5 {
+  width: 200px;
+  height: 180px;
+  position: relative;
+  left: 44%;
+  bottom: 680%;
+}
+
+.it5 {
+  color:white;
+  position: relative;
+  top: 38%;
+  right: 25%;
+  font-size: 11px;
+}
+
+.maci6 {
+  position: absolute;
+  left: 13%;
+  top: 3%;
+}
+
+.mach6 {
+  width: 200px;
+  height: 180px;
+  position: relative;
+  left: 49.5%;
+  bottom: 840%;
+}
+
+.it6 {
+  color:white;
+  position: relative;
+  top: 39%;
+  right: 20%;
+  font-size: 11px;
+}
+
+.maci7 {
+  position: absolute;
+  left: 14%;
+  top: 9%;
+}
+
+.mach7 {
+  width: 200px;
+  height: 180px;
+  position: relative;
+  left: 55%;
+  bottom: 999%;
+}
+
+.it7 {
+  color: white;
+  position: relative;
+  top: 39%;
+  right: 20%;
+  font-size: 11px;
+}
+
+.it71 {
+  color: #FF6633;
+  font-size: 10px;
+  position: relative;
+  top: 38%;
+  right: 21%;
+  margin-top: -4%;
+}
+
+.maci8 {
+  position: absolute;
+  left: 11%;
+  bottom: 65%;
+  z-index: 2;
+}
+
+.mach8 {
+  width: 200px;
+  height: 180px;
+  position: relative;
+  left: 61%;
+  bottom: 1380px;
+  
+}
+
+.it8 {
+  color: white;
+  position: relative;
+  top: 34%;
+  right: 21%;
+  font-size: 11px;
+}
+
+.maci9 {
+  position: absolute;
+  left: 11%;
+  bottom: 65%;
+  z-index: 2;
+}
+
+.mach9 {
+  width: 200px;
+  height: 180px;
+  position: relative;
+  left: 68%;
+  bottom: 1570px;
+}
+
+.it9 {
+  color: white;
+  position: relative;
+  top: 34%;
+  right: 21%;
+  font-size: 11px;
+}
+
+.maci10 {
+  position: absolute;
+  left: 11%;
+  bottom: 67%;
+  z-index: 2;
+}
+
+.mach10 {
+  width: 200px;
+  height: 180px;
+  position: relative;
+  left: 75.5%;
+  bottom: 1770px;
+}
+
+.it10 {
+  color: white;
+  position: relative;
+  top: 38%;
+  right: 30%;
+  font-size: 11px;
+}
+
+.maci11 {
+  position: absolute;
+  left: 10%;
+  bottom: 67%;
+  z-index: 2;
+}
+
+.mach11 {
+  width: 200px;
+  height: 180px;
+  position: relative;
+  left: 81%;
+  bottom: 1960px;
+}
+
+.it111 {
+  color: white;
+  position: relative;
+  top: 38%;
+  right: 30%;
+  font-size: 11px;
+}
+
+.background {
+  background-color:black;
+  color:white;
+  margin-top:0%;
+  z-index:1;
+  height:2150px;
+  
+  font-size: 37px;
+}
+.welcomet {
+  position: relative;
+  top: 50px;
+  background: -webkit-radial-gradient(	#F8F8F8, 	#A8A8A8, 	#282828);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
+.applem1icon {
+  height: 90px;
+  width: 90px;
+  position: relative;
+  top: 100px;
+  left: 46.5%;
+
+}
+.learnm1 {
+  font-size: 16px;
+  color: #0066CC;
+  position: relative;
+  top: 13px;
+  text-align: center;
+}
+.macimg1 {
+  position: relative;
+  left: 26%;
+  top: 60px;
+}
+.macb1 {
+  height: 500px;
+}
+
+.new {
+  color: #FF6633;
+  font-size: 20px;
+  position: relative;
+  top: 40px;
+}
+
+.macbb1 {
+  position: relative;
+  bottom: 530px;
+  width: 300px;
+  left: 18%;
+}
+
+button {
+  border-radius: 26px;
+  background-color: #0066CC;
+  border: none;
+  text-align: center;
+  color: white;
+  
+}
+.button1 {
+  position: relative;
+  bottom: 75px;
+  height: 45px;
+  width: 85px;
+  font-size: 18px;
+}
+
+.maclearn {
+  font-size: 16px;
+  color: #0066CC;
+  position: relative;
+  top: 30px;
+}
+
+.macb2 {
+  height: 500px;
+}
+
+.macbb2 {
+  position: relative;
+  bottom: 450px;
+  width: 340px;
+  left: 63%;
+}
+
+.macimg2 {
+  position: relative;
+  top: 60px;
+  margin-top: 40px;
+  left: 8%;
+}
+
+.macb3 {
+  height: 500px;
+}
+
+.macbb3 {
+  position: relative;
+  bottom: 320px;
+  width: 300px;
+  left: 18%;
+}
+
+.macimg3 {
+  position: relative;
+  top: 90px;
+  margin-top: 40px;
+  left: 32%;
+}
+
+.whitebox {
+  background-color: #F0F0F0;
+  height: 1100px;
+  margin: 70px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 50px;
+  white-space: normal;
+  overflow: hidden;
+  position: relative;
+}
+
+.which {
+  position: relative;
+  top: 5%;
+  text-align: center;
+}
+
+.compare {
+  position: relative;
+  width: 400px;
+  white-space: normal;
+  overflow: hidden;
+  font-size: 19px;
+  color: #0066CC;
+  top: 80px;
+  left: 35%;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.a3macimg {
+  position: relative;
+  top: 110px;
+  width: 75%;
+  left: 13%;
+}
+
+.a3mact {
+  font-size: 15px;
+  font-weight: lighter;
+  position: relative;
+  width: 300px;
+  left: 16%;
+  top: 10%;
+}
+
+.button2 {
+  position: relative;
+  bottom: 15px;
+  height: 25px;
+  width: 50px;
+  font-size: 12px;
+}
+
+.mac3learn {
+  font-size: 16px;
+  color: #0066CC;
+  position: relative;
+  bottom: 15px;
+}
+
+.a3mact2 {
+  font-size: 15px;
+  font-weight: lighter;
+  position: relative;
+  width: 300px;
+  left: 41%;
+  bottom: 28.5%;
+}
+
+.a3mact3 {
+  font-size: 15px;
+  font-weight: lighter;
+  position: relative;
+  width: 300px;
+  left: 64.5%;
+  bottom: 66.5%;
+}
+
+.whitebox2 {
+  background-color: #F0F0F0;
+  height: 660px;
+  margin: 70px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 40px;
+  white-space: normal;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.double2 {
+  position: relative;
+  font-size: 50px;
+
+}
+.long_img2 {
+  position: relative;
+  left: 8%;
+  width: 85%;
+  bottom: 2%;
+}
+
+.shop2 {
+  font-size: 20px;
+  margin-top: -55px;
+  color: #0066CC;
+  margin-bottom: 25px;
+}
+
+.whitebox3 {
+  background-color: #F0F0F0;
+  height: 700px;
+  width: 670px;
+  margin: 70px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 50px;
+  white-space: normal;
+  overflow: hidden;
+  position: relative;
+  margin-right:0px;
+  text-align: center;
+  font-size: 45px;
+}
+
+.whitebox4 {
+  background-color: #F0F0F0;
+  height: 700px;
+  width: 670px;
+  margin: 70px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 50px;
+  white-space: normal;
+  overflow: hidden;
+  position: relative;
+  margin-right: 0px;
+  bottom: 97.3%;
+  left: 46.5%;
+  text-align: center;
+  font-size: 45px;
+}
+
+.whitebox34 {
+  white-space: normal;
+  overflow: hidden;
+  position: relative;
+  height: 750px;
+}
+
+.button3 {
+  position: relative;
+  height: 40px;
+  width: 80px;
+  font-size: 17px;
+}
+
+.wb3img {
+  margin-top: 200px;
+}
+
+.wb4t {
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.wb4img {
+  margin-top: 30px;
+}
+
+.find {
+  font-size: 17px;
+  margin-top: 20px;
+  color: #0066CC;
+}
+
+.a3icon {
+  position: relative;
+  width: 65%;
+  left: 17.5%;
+  top: 75px;
+}
+
+.a3iconsec {
+  white-space: normal;
+  overflow: hidden;
+  height: 300px;
+}
+
+.a3icont1 {
+  text-align: center;
+  width: 350px;
+  position: relative;
+  top: 20%;
+  left: 9%;
+}
+
+.free {
+  font-size: 20px;
+}
+
+.a3icont2 {
+  text-align: center;
+  width: 350px;
+  position: relative;
+  bottom: 16%;
+  left: 38.5%;
+}
+
+.a3icont3{
+  text-align: center;
+  width: 350px;
+  position: relative;
+  bottom: 53%;
+  left: 67%;
+}
+
+.what{
+font-size:65px;
+text-align: center;
+margin-top: 10px;
+}
+
+.rainbowpic {
+  margin-left: 80px;
+  margin-top: 10px;
+  position: relative;
+  bottom: 20px;
+  white-space: normal;
+  overflow: hidden;
+}
+
+.onrainbowicon {
+  position: relative;
+  left: 45%;
+  top: 370px;
+  z-index: 1;
+}
+
+.rainbow {
+  white-space: normal;
+  overflow: hidden;
+  position: relative;
+  bottom: 150px;
+}
+
+.doing {
+  color: white;
+  font-size: 48px;
+  position: relative;
+  top: 350px;
+  text-align: center; 
+}
+
+.update {
+  position: relative;
+  color: white;
+  left: 43%;
+  top: 340px;
+  z-index: 1;
+}
+
+.rainbowt {
+  position: relative;
+  top: 50px;
+}
+
+.whitebox5 {
+  background-color:	#F8F8F8;
+  height: 700px;
+  width: 670px;
+  margin: 70px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 50px;
+  white-space: normal;
+  overflow: hidden;
+  position: relative;
+  margin-right:  0px;
+  text-align: center;
+  font-size: 45px;
+}
+
+.whitebox6 {
+  background-color:	#F8F8F8;
+  height: 700px;
+  width: 670px;
+  margin: 70px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 50px;
+  white-space: normal;
+  overflow: hidden;
+  position: relative;
+  margin-right: 0px;
+  bottom: 97.3%;
+  left: 46.5%;
+  text-align: center;
+  font-size: 45px;
+}
+
+.whitebox56 {
+  white-space: normal;
+  overflow: hidden;
+  position:relative;
+  height: 750px;
+  margin-top: -170px;
+}
+
+.wb5img {
+  margin-top: 110px;
+}
+
+.wb6img {
+  margin-top: 135px;
+}
+
+.whitebox7 {
+  background-color: #fbfbfd;
+  height: 1150px;
+  margin: 70px;
+  margin-top: 30px;
+  margin-bottom: 30px; 
+  white-space: normal;
+  overflow: hidden;
+  position: relative;
+}
+
+.built {
+  text-align: center;
+  font-size: 45px;
+  margin-top: 80px;
+  margin-bottom: 0px;
+}
+
+.powerful1 {
+  text-align: center;
+  font-size: 17px;
+  margin-top: -10px;
+  line-height: 1.8;
+}
+
+.longicon {
+  position: relative;
+  left: 20%;
+  width: 65%;
+  margin-top: 30px;
+}
+
+.longicont {
+  font-size: 17px;
+  text-align: center;
+  margin-top: 0px;
+  word-spacing: 20px;
+  margin-left: 40px; 
+}
+
+.line {
+  text-align: center;
+  margin-left: 30px;
+  margin-top: -15px;
+  color: grey;
+}
+
+.safari {
+  text-align: center;
+  line-height: 1.8;
+  margin-top: 40px;
+}
+
+.learna {
+  color: #0066CC;
+  text-align: center;
+}
+
+.house {
+  width: 50%;
+  margin-left: 350px;
+}
+
+.longicont2 {
+  font-size: 17px;
+  text-align: center;
+  margin-top: 0px;
+  word-spacing: 22px;
+  margin-left: 50px; 
+}
+
+.longicon2 {
+  position: relative;
+  left: 19%;
+  width: 65%;
+  margin-top: 30px;
+}
+
+.whitebox8 {
+  background-color: #fbfbfd;
+  height: 1300px;
+  margin: 70px;
+  margin-top: 30px;
+  margin-bottom: 30px; 
+  white-space: normal;
+  overflow: hidden;
+  position: relative;
+}
+
+.appstore {
+  margin-left: 315px;
+  z-index: 2;
+  width: 5%;
+  top: 400px;
+}
+
+.the {
+  margin-left: 400px;
+  font-size: 17px;
+  margin-top: -60px;
+}
+
+.getmac {
+  margin-top: 150px;
+  text-align: center;
+  font-size: 60px;
+}
+
+.whitebox9 {
+  background-color: #fbfbfd;
+  height: 600px;
+  margin: 70px;
+  margin-top: 30px;
+  margin-bottom: 130px; 
+  white-space: normal;
+  overflow: hidden;
+  position: relative;
+}
+
+.bigicon {
+  margin-top: 180px;
+  margin-left: 210px;
+}
+
+.oneicon {
+  margin-left: 200px;
+  position: relative;
+  bottom: 190px;
+}
+
+.bundlemac {
+  margin-left: 600px;
+  font-size: 26px;
+  text-align: center;
+  position: relative;
+  bottom: 200px;
+}
+
+.tryit {
+  margin-left: 870px;
+  position: relative;
+  bottom: 200px;
+  color: #0066CC;
+  font-size: 23px;
+}
+
+.box1 {
+  background-color: black;
+  height: 645px;
+  width: 670px;
+  margin: 70px;
+  margin-top: 30px;
+  margin-bottom:30px;
+  font-size: 50px;
+  white-space: normal;
+  overflow: hidden;
+  position: relative;
+  margin-right: 0px;
+  text-align: center;
+  font-size: 22px;
+  color: white;
+}
+
+.box2 {
+  background-color:	#F8F8F8;
+  height: 645px;
+  width: 670px;
+  margin :70px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 50px;
+  white-space: normal;
+  overflow: hidden;
+  position: relative;
+  margin-right: 0px;
+  bottom: 90%;
+  left: 46.5%;
+  text-align: center;
+  font-size: 22px;
+  color: white;
+}
+
+.box12 {
+  white-space: normal;
+  overflow: hidden;
+  position: relative;
+  height: 750px;
+  margin-top: -170px;
+}
+
+.bx1img {
+  margin-top: 20px;
+}
+
+.bx2img {
+  margin-top: -300px;
+  height: 105%;
+  margin-left: -25px;
+}
+
+.tvicon1 {
+  width: 20%;
+}
+
+.tryit2 {
+  color: #0066CC;
+  font-size: 23px;
+}
+
+.tvicon2 {
+  width: 34%;
+}
+
+.green {
+  margin-top: 5px;
+}
+
+/*footer*/
+
+.left {
+  width: 49%;
+    float: left;
+      background-color: #f7f7f7;
+  padding-bottom: 30px;
+  margin: 10px 8px 0px 11px;
+}
+
+.right {
+  width: 49%;
+    float: right;
+      background-color: #f7f7f7;
+    padding-bottom: 30px;
+  margin: 10px 11px 0px 0px;
+}
+
+/*footer*/
+
+footer {
+  text-align: center;
+  padding-top: 0.5%;
+  padding-right: 16%;
+  padding-bottom: 21px;
+  padding-left: 16%;
+  margin: 95px 0px 0px 0px;
+  background-color: #f2f2f2;
+  font-size: 12px;
+}
+
+.f1 {
+  text-align: left;
+  padding-right: auto;
+  padding-left: 23px;
+ margin: 0;
+}
+
+table, th, td {
+  border: none;
+  padding: auto;
+  border-collapse: collapse;
+   margin: 20px 55px 30px 18px;
+  width: auto;
+}
+
+th, td {
+  padding: 5px;
+  text-align: left;    
+}
+
+.f2 {
+   display: flex;
+  align-items: flex-start;
+  flex-direction: row
+}  
+
+td {
+  color: #565659;
+}
+
+th {
+  color: #1D1D1F;
+}
